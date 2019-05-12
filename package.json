@@ -1,0 +1,21 @@
+{
+  "name": "blog-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "js-datepicker": "^4.0.10",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
+  }
+}

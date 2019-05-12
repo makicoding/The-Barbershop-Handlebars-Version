@@ -1,0 +1,101 @@
+<!-- BACKGROUND IMAGE ELEMENTS -->
+
+<!-- Background Image -->
+<img class="backgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_Scissors_Double.jpg" alt="Background Image"></img>
+
+<!-- Mobile Background Image -->
+<img class="mobileBackgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_Scissors_Single_MobileCrop.jpg" alt="Mobile Background Image"></img>
+
+
+
+<!-- LOGO BUTTON -->
+<a class="logoButton" href="/">
+    <img class="logo" src="assets/images/sRGB_PNG/Logo.png" alt="Logo"></img>
+</a>
+<br></br>
+
+
+
+<!-- PAGE HEADING -->
+<div class="pageHeading">Barber Portal</div>
+
+
+
+<!-- MAIN CONTENT OF PAGE -->
+<!-- BOOTSTRAP GRID -->
+
+<br></br>
+
+<!-- Max width 960px container -->
+<div class="container mainContentContainer">         <!-- Put any bootstrap elements into class="container" to set max width to 960px and have it centered on page -->
+    
+    <!-- Row 1 -->
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <button class="refreshDataButton">Refresh Data</button>
+    </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row mt-4">  <!-- m stands for margin, t stands for top, mt means margin top-->
+    <div class="col-md-6 offset-md-3">
+        <p class="selectBarberText">Select Barber:</p>
+    </div>
+    </div>
+    
+    <!-- Row 3 -->
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="form-group">
+        <select class="custom-select" id="category">
+            <option selected value="">All Barbers</option>
+            <option value="Tony">Tony</option>
+            <option value="Bob">Bob</option>
+            <option value="Jim">Jim</option>
+        </select>
+        </div>
+    </div>
+    </div>
+
+    <!-- Row 4 (Reservation Data from barberPortal.js populates inside class="reservation-container") -->
+    <div class="row mt-2">    <!-- m stands for margin, t stands for top, mt means margin top-->
+    <div class="col-md-6 offset-md-3 reservation-container"></div>
+    </div>
+
+    <br>
+
+</div>
+
+
+
+<!-- MENU -->
+
+<!-- The Overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      <!-- &times; is the icon for X -->
+    
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="makeReservation">Make Reservation</a>
+        <span class="nonActiveButton">Barber Portal</span>
+        <a href="services">Services</a> 
+        <a href="contact">Contact</a> 
+        <a href="/">Back To Home</a>    
+    </div>
+
+</div>
+
+<!-- Top Bar and Branding Text -->
+<div class="topBar">
+    <span class="branding">Branding</span>
+</div>
+
+<!-- Hamburger Menu -->
+<div class="topnav">
+
+    <!-- Hamburger icon -->
+    <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>      <!-- &#9776; is the hamburger icon -->
+    
+</div>

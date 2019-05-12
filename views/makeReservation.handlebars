@@ -1,0 +1,201 @@
+<!-- BACKGROUND IMAGE ELEMENTS -->
+
+<!-- Background Image -->
+<img class="backgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_Scissors_Double.jpg" alt="Background Image"></img>
+
+<!-- Mobile Background Image -->
+<img class="mobileBackgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_Scissors_Single_MobileCrop.jpg" alt="Mobile Background Image"></img>
+
+
+
+<!-- LOGO BUTTON -->
+<a class="logoButton" href="/">
+    <img class="logo" src="assets/images/sRGB_PNG/Logo.png" alt="Logo"></img>
+</a>
+<br></br>
+
+
+
+<!-- PAGE HEADING -->
+<div class="pageHeading">Make Reservation</div>
+
+
+
+<!-- MAIN CONTENT OF PAGE -->
+<!-- BOOTSTRAP GRID -->
+
+<!-- Max width 960px container -->
+<div class="container mainContentContainer">        <!-- Put any bootstrap elements into class="container" to set max width to 960px and have it centered on page -->
+    
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <form id="reservationForm">
+        
+        <div class="form-group">
+            <label for="title">Customer Name:</label>
+            <input type="text" class="form-control" id="title" autocomplete="off">  <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" class="form-control" id="mobile" autocomplete="off"> <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" autocomplete="off">  <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+        </div>
+            
+        <div class="form-group">
+            <label for="category">Select Barber:</label>
+            <select class="custom-select" id="category">
+            <option selected value=""></option>
+            <option value="Tony">Tony</option>
+            <option value="Bob">Bob</option>
+            <option value="Jim">Jim</option>
+            </select>
+        </div>
+
+        <!-- Datepicker -->
+        <div class='form-group'>
+            <label for="body"></label>
+            <label for="category">Select Date:</label>
+            <br>
+            <input type="text" class="form-control" id="datepicker" autocomplete="off"> <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+        </div>
+
+        <div class="form-group">
+            <label for="category">Select Time:</label>
+            <select class="custom-select" id="time">
+            <option selected value=""></option>
+            <option value="10am">10am</option>
+            <option value="11am">11am</option>
+            <option value="12pm">12pm</option>
+            <option value="1pm">1pm</option>
+            <option value="2pm">2pm</option>
+            <option value="3pm">3pm</option>
+            <option value="4pm">4pm</option>
+            <option value="5pm">5pm</option>
+            <option value="6pm">6pm</option>
+            <option value="7pm">7pm</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="submit" class="submit">Submit</button>
+
+        </form>
+    </div>
+    </div>
+
+    <br></br>
+    
+</div>
+
+
+
+<!-- MODALS -->
+
+<!-- Modal 1 (Please fill all required fields) -->
+<div id="pleaseFillAllFieldsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title modal1Title"><strong>Attention!</strong></h2>
+            </div>
+            <div class="modal-body text-center">
+                <p>Please enter all required fields</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="closeButton modalFooterButton" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal 2 (Confirm) -->
+<div id="confirmModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><strong>Confirm</strong></h2>
+            </div>
+            <div class="modal-body text-center">
+            <p>Are you sure you would like to submit your reservation with 
+                <br>
+                <span id="modalConfirmReservationBarber"></span> on 
+                <span id="modalConfirmReservationDate"></span> at 
+                <span id="modalConfirmReservationTime"></span>?
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="modalFooterButton" data-dismiss="modal">Close</button>
+            <button type="button" class="confirmButton modalFooterButton">Confirm</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal 3 (Success!) -->
+<div id="successModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><strong>Success!</strong></h2>
+            </div>
+            <div class="modal-body text-center">
+                <p>Your reservation with <span id="modalSuccessReservationBarber"></span> has been submitted successfully!</p>
+                <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="successModalCloseButton modalFooterButton">Close</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+<!-- MENU -->
+
+<!-- The Overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- &times; is the icon for X -->
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+    <span class="nonActiveButton">Make Reservation</span>
+    <a href="barberPortal">Barber Portal</a>
+    <a href="services">Services</a>
+    <a href="contact">Contact</a>
+    <a href="/">Back To Home</a>
+    </div>
+
+</div>
+
+<!-- Top Bar and Branding Text -->
+<div class="topBar">
+    <span class="branding">Branding</span>
+</div>
+
+<!-- Hamburger Menu -->
+<div class="topnav">
+
+    <!-- Hamburger icon -->
+    <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a> <!-- &#9776; is the hamburger icon -->
+
+</div>
